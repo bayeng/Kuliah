@@ -1,2 +1,1 @@
-# Kunam
-hanya gabut
+
