@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -13,9 +15,19 @@
 </head>
 <body>
     
-    <div class="container">
+    <div class="container mt-3">
+    <?php
+
+        session_start();
+        if(isset($_SESSION['username'])){
+            echo "selamat datang " . $_SESSION['username'];
+            echo "<a href='logout.php'>Log Out</a>";
+        }
+
+    ?>
 
         <h2 class="mb-3 mt-3">Data Mahasiswa</h2>
+        
         
         <div class="row">
             <div class="col-md-8">
